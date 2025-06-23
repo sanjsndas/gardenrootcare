@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | GardenRoot Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary: #2e7d32;
+            --secondary: #81c784;
+            --accent: #ffb74d;
+            --light: #f1f8e9;
+            --dark: #1b5e20;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .nav-link:hover {
+            color: var(--accent);
+        }
+        
+        footer {
+            background-color: var(--dark);
+        }
+        
+        .footer-text {
+            color: #000000;
+        }
+        
+        .contact-section {
+            margin-bottom: 2.5rem;
+        }
+        
+        .contact-section h3 {
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        .contact-section p {
+            margin-bottom: 1rem;
+            color: #4a5568;
+        }
+        
+        .form-container {
+            background-color: var(--light);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <img src="p1.png" alt="GardenRoot Logo" class="h-12 w-12 rounded-full">
+                    <span class="font-bold text-xl text-green-800">GardenRoot Care</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                     <a href="index.html" class="nav-link text-gray-800 hover:text-green-600 transition duration-300">Home</a>
+                    <a href="privacy.html" class="nav-link text-gray-800 hover:text-green-600 transition duration-300">Privacy</a>
+                    <a href="terms.html" class="nav-link text-gray-800 hover:text-green-600 transition duration-300">Terms</a>
+                    <a href="cookies.html" class="nav-link text-gray-800 hover:text-green-600 transition duration-300">Cookies</a>
+                    <a href="contact.html" class="nav-link text-gray-800 hover:text-green-600 transition duration-300">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Form Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-green-800 mb-4">Contact GardenRoot Care</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+                <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">We'd love to hear from you! Reach out for inquiries, support, or to schedule a consultation.</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2 form-container">
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" required class="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" required class="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                            <select id="subject" name="subject" class="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                                <option value="general">General Inquiry</option>
+                                <option value="service">Service Inquiry</option>
+                                <option value="quote">Request a Quote</option>
+                                <option value="support">Customer Support</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 mb-2">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required class="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-green-500 focus:border-green-500"></textarea>
+                        </div>
+                        <button type="submit" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 w-full">Send Message</button>
+                    </form>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <h3 class="text-2xl font-semibold text-green-800 mb-4">Our Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-green-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-green-800">Address</h4>
+                                    <p class="text-gray-600">120 E 14th St, New York, NY 10003</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-green-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-green-800">Phone</h4>
+                                    <p class="text-gray-600">(212) 555-1234</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-green-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-green-800">Email</h4>
+                                    <p class="text-gray-600">info@gardenrootcare.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-green-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-green-800">Business Hours</h4>
+                                    <p class="text-gray-600">Monday-Friday: 8:00 AM - 6:00 PM</p>
+                                    <p class="text-gray-600">Saturday: 9:00 AM - 4:00 PM</p>
+                                    <p class="text-gray-600">Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-6 bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-green-800 mb-4">Visit Our Office</h3>
+                        <div class="aspect-w-16 aspect-h-9">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215256018043!2d-73.9888459241366!3d40.73477097138896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a3c1dc503b%3A0x8a1a6b7a1a1a1a1a!2s120%20E%2014th%20St%2C%20New%20York%2C%20NY%2010003!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="rounded-lg"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comprehensive Contact Information -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-green-800 mb-4">Comprehensive Contact Guide</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+                <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">Everything you need to know about contacting GardenRoot Care</p>
+            </div>
+
+            <div class="space-y-12">
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">1. General Inquiries</h3>
+                    <p>For general questions about our services, company information, or any other non-urgent matters, please use our contact form or email info@gardenrootcare.com. Our customer service team typically responds within 24-48 hours during business days.</p>
+                    <p>We welcome all questions about our gardening services, sustainable practices, and company policies. Our knowledgeable staff is happy to provide detailed information about our offerings and help you understand how we can meet your landscaping needs.</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">2. Service Requests</h3>
+                    <p>To request our gardening or landscaping services, please use our online contact form or call our service line at (212) 555-1234. For accurate estimates, we recommend scheduling an on-site consultation where our experts can assess your property.</p>
+                    <p>When requesting services, please provide as much detail as possible about your needs, including property size, current condition, and any specific requirements. This helps us prepare for your consultation and provide more accurate information about our services.</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">3. Emergency Services</h3>
+                    <p>For urgent matters such as storm damage, fallen trees, or other landscaping emergencies, please call our 24/7 emergency line at (212) 555-EMER (3637). Our emergency response team is available around the clock to address critical situations.</p>
+                    <p>Emergency services include tree removal after storms, urgent irrigation repairs, and other time-sensitive situations that require immediate attention. Additional fees may apply for after-hours emergency services.</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">4. Billing and Payments</h3>
+                    <p>For questions about invoices, payments, or billing discrepancies, please contact our accounting department at billing@gardenrootcare.com or call (212) 555-1234 ext. 2. Our billing hours are Monday-Friday, 9:00 AM - 5:00 PM.</p>
+                    <p>We accept various payment methods including credit cards, checks, and electronic transfers. Please include your account number or invoice number in all billing-related communications for faster service.</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">5. Customer Support</h3>
+                    <p>Our customer support team is available to assist with service questions, scheduling changes, and account management. Contact us at support@gardenrootcare.com or (212) 555-1234 ext. 3 during business hours.</p>
+                    <p>We strive to resolve all customer service inquiries within one business day. For complex issues, we may need additional time to research and provide a complete response. Your satisfaction is our top priority.</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">6. Employment Opportunities</h3>
+                    <p>For information about current job openings and career opportunities at GardenRoot Care, please visit our careers page or email careers@gardenrootcare.com. We're always looking for talented horticulturists and landscaping professionals.</p>
+                    <p>Include your resume and a cover letter detailing your experience and interest in sustainable landscaping. Qualified candidates will be contacted for interviews within 2-3 weeks of application submission.</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">7. Vendor and Supplier Inquiries</h3>
+                    <p>Businesses interested in becoming vendors or suppliers for GardenRoot Care should contact procurement@gardenrootcare.com. Please include information about your products or services and any relevant certifications.</p>
+                    <p>We prioritize partnerships with local suppliers and businesses that share our commitment to sustainable practices. Our procurement team reviews all vendor applications quarterly.</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">8. Media and Press</h3>
+                    <p>Members of the press seeking information, interviews, or media resources should contact our communications team at press@gardenrootcare.com. We're happy to provide expert commentary on sustainable landscaping topics.</p>
+                    <p>Please include your media outlet, deadline, and specific questions in your inquiry. Our team will respond to verified media requests within 24 hours during business days.</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">9. Community Partnerships</h3>
+                    <p>For organizations interested in partnering with GardenRoot Care on community greening projects or educational initiatives, please email community@gardenrootcare.com. We're committed to supporting local communities through outreach and collaboration.</p>
+                    <p>We welcome proposals for workshops, volunteer opportunities, and joint events that promote environmental stewardship and sustainable practices. Our community engagement team reviews partnership requests on a rolling basis.</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">10. Feedback and Suggestions</h3>
+                    <p>Your feedback is invaluable to us. If you have suggestions for improving our services or website, please share them via our contact form or email feedback@gardenrootcare.com. We appreciate your input and strive to enhance our customer experience.</p>
+                    <p>We review all feedback and suggestions regularly and implement changes based on customer insights whenever possible. Thank you for helping us grow and improve!</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">11. Sustainability Initiatives</h3>
+                    <p>For inquiries about our sustainability initiatives and eco-friendly practices, please contact sustainability@gardenrootcare.com. We are dedicated to reducing our environmental impact and promoting green practices in landscaping.</p>
+                    <p>We offer workshops and resources for customers interested in sustainable gardening techniques. Our team is happy to share tips and best practices for creating environmentally friendly landscapes.</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">12. Landscaping Design Services</h3>
+                    <p>If you're interested in our landscaping design services, please fill out the contact form or call us directly. Our design team will work with you to create a customized plan that meets your vision and budget.</p>
+                    <p>We offer consultations to discuss your ideas and preferences, ensuring that the final design reflects your style while considering the local environment and sustainability.</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">13. Pest Management Services</h3>
+                    <p>For pest management inquiries, please contact pestcontrol@gardenrootcare.com. Our certified pest management professionals can provide assessments and treatment options for common garden pests.</p>
+                    <p>We prioritize eco-friendly pest control methods that minimize harm to beneficial insects and the environment. Our team will work with you to develop a safe and effective pest management plan.</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">14. Irrigation Services</h3>
+                    <p>For questions about irrigation installation or maintenance, please reach out to irrigation@gardenrootcare.com. Our irrigation specialists can help you design and implement efficient watering systems for your landscape.</p>
+                    <p>We offer both traditional and smart irrigation solutions that conserve water while ensuring your plants receive the moisture they need. Schedule a consultation to learn more about our services.</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">15. Tree Care Services</h3>
+                    <p>For tree care inquiries, including pruning, removal, and health assessments, please contact trees@gardenrootcare.com. Our certified arborists are trained to provide expert care for your trees.</p>
+                    <p>We emphasize the importance of tree health and safety, offering services that promote growth and longevity while addressing any potential hazards. Schedule an assessment today!</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">16. Lawn Care Services</h3>
+                    <p>If you're interested in lawn care services, please reach out to lawncare@gardenrootcare.com. Our lawn care experts can help you achieve a lush, healthy lawn through tailored maintenance plans.</p>
+                    <p>We offer services such as fertilization, aeration, and weed control, all designed to enhance the health and appearance of your lawn. Contact us for a free lawn assessment!</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">17. Seasonal Services</h3>
+                    <p>For seasonal services such as fall clean-up or spring planting, please contact seasonal@gardenrootcare.com. Our team is ready to assist with all your seasonal landscaping needs.</p>
+                    <p>We provide comprehensive services to prepare your garden for each season, ensuring that your landscape remains beautiful and healthy year-round. Schedule your seasonal service today!</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">18. Landscape Maintenance</h3>
+                    <p>For ongoing landscape maintenance inquiries, please reach out to maintenance@gardenrootcare.com. Our maintenance team can help keep your garden looking its best with regular care and attention.</p>
+                    <p>We offer customizable maintenance plans that include mowing, trimming, and seasonal planting, tailored to your specific landscape needs. Contact us to discuss your maintenance options.</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">19. Hardscaping Services</h3>
+                    <p>If you're interested in hardscaping services such as patios, walkways, or retaining walls, please contact hardscaping@gardenrootcare.com. Our skilled team can design and install durable hardscape features for your outdoor space.</p>
+                    <p>We focus on creating functional and aesthetically pleasing hardscapes that complement your landscape design. Schedule a consultation to explore your hardscaping options.</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">20. Garden Design Workshops</h3>
+                    <p>For information about our garden design workshops, please contact workshops@gardenrootcare.com. We offer hands-on workshops that teach participants how to create beautiful and sustainable gardens.</p>
+                    <p>Our workshops cover various topics, including plant selection, garden layout, and maintenance techniques. Join us to learn from our experienced horticulturists!</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">21. Community Events</h3>
+                    <p>For inquiries about community events hosted by GardenRoot Care, please contact events@gardenrootcare.com. We regularly organize events to engage with the community and promote gardening education.</p>
+                    <p>Stay updated on our upcoming events by following us on social media or subscribing to our newsletter. We look forward to seeing you at our next event!</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">22. Educational Resources</h3>
+                    <p>If you're looking for educational resources on gardening and landscaping, please contact education@gardenrootcare.com. We provide a variety of materials to help you learn about sustainable practices.</p>
+                    <p>Our resources include guides, articles, and videos that cover a wide range of topics. We aim to empower our customers with knowledge to create beautiful and sustainable landscapes.</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">23. Plant Care Tips</h3>
+                    <p>For plant care tips and advice, please reach out to plantcare@gardenrootcare.com. Our horticulturists are available to provide guidance on how to care for your plants effectively.</p>
+                    <p>We offer personalized advice based on your specific plants and growing conditions. Don't hesitate to ask for help with any plant-related questions!</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">24. Landscape Design Trends</h3>
+                    <p>If you're interested in the latest landscape design trends, please contact trends@gardenrootcare.com. Our design team stays updated on current trends and can provide insights for your project.</p>
+                    <p>We can help you incorporate modern design elements into your landscape while ensuring that it remains functional and sustainable. Contact us for a consultation!</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">25. Gardening Clubs</h3>
+                    <p>For information about local gardening clubs and organizations, please contact clubs@gardenrootcare.com. We support community gardening initiatives and can connect you with local groups.</p>
+                    <p>Joining a gardening club is a great way to meet fellow gardening enthusiasts and share knowledge. We encourage community involvement and collaboration!</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">26. Landscape Photography</h3>
+                    <p>If you're interested in landscape photography services, please contact photography@gardenrootcare.com. We offer professional photography to showcase your garden or landscape project.</p>
+                    <p>Our photographers specialize in capturing the beauty of outdoor spaces, providing you with stunning images for personal or promotional use. Schedule a session today!</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">27. Seasonal Planting Guides</h3>
+                    <p>For seasonal planting guides and recommendations, please contact planting@gardenrootcare.com. Our experts can help you choose the right plants for each season to ensure a thriving garden.</p>
+                    <p>We provide tailored planting schedules based on your local climate and soil conditions. Let us help you create a vibrant and diverse garden throughout the year!</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">28. Organic Gardening</h3>
+                    <p>If you're interested in organic gardening practices, please reach out to organic@gardenrootcare.com. We promote sustainable gardening methods that prioritize environmental health.</p>
+                    <p>Our team can provide tips and resources for growing organic vegetables, herbs, and flowers. Join us in creating a healthier planet through organic gardening!</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">29. Landscape Restoration</h3>
+                    <p>For inquiries about landscape restoration services, please contact restoration@gardenrootcare.com. We specialize in restoring degraded landscapes to their natural beauty.</p>
+                    <p>Our restoration projects focus on native plantings and sustainable practices to enhance biodiversity and ecosystem health. Contact us to discuss your restoration needs!</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">30. Xeriscaping</h3>
+                    <p>If you're interested in xeriscaping and water-efficient landscaping, please reach out to xeriscape@gardenrootcare.com. We can help you design a beautiful landscape that conserves water.</p>
+                    <p>Xeriscaping involves using drought-tolerant plants and efficient irrigation techniques to create sustainable gardens. Let us help you create a low-maintenance, eco-friendly landscape!</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">31. Landscape Lighting</h3>
+                    <p>For inquiries about landscape lighting design and installation, please contact lighting@gardenrootcare.com. Our team can enhance your outdoor space with beautiful and functional lighting solutions.</p>
+                    <p>We offer a range of lighting options to highlight your landscape features and improve safety. Schedule a consultation to explore your lighting possibilities!</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">32. Green Roofs</h3>
+                    <p>If you're interested in green roofs and living walls, please contact greenroofs@gardenrootcare.com. We specialize in creating sustainable green spaces in urban environments.</p>
+                    <p>Green roofs provide insulation, reduce stormwater runoff, and enhance biodiversity. Let us help you transform your rooftop into a thriving green oasis!</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">33. Vertical Gardening</h3>
+                    <p>For inquiries about vertical gardening solutions, please reach out to vertical@gardenrootcare.com. We can help you maximize your space with innovative vertical gardening techniques.</p>
+                    <p>Vertical gardens are perfect for small spaces and can enhance the aesthetic appeal of your home or business. Contact us to learn more about our vertical gardening options!</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">34. Landscape Architecture</h3>
+                    <p>If you're interested in landscape architecture services, please contact architecture@gardenrootcare.com. Our licensed landscape architects can design functional and beautiful outdoor spaces.</p>
+                    <p>We work closely with clients to create designs that meet their needs while considering environmental sustainability. Schedule a consultation to discuss your project!</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">35. Outdoor Living Spaces</h3>
+                    <p>For inquiries about designing outdoor living spaces, please reach out to outdoorliving@gardenrootcare.com. We can help you create beautiful patios, decks, and outdoor kitchens.</p>
+                    <p>Our designs focus on enhancing your outdoor experience while integrating seamlessly with your landscape. Contact us to start planning your dream outdoor space!</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">36. Wildlife Habitat Creation</h3>
+                    <p>If you're interested in creating wildlife habitats in your garden, please contact wildlife@gardenrootcare.com. We can help you design landscapes that support local wildlife and biodiversity.</p>
+                    <p>Our team can provide guidance on native plant selection and habitat features that attract beneficial wildlife. Join us in promoting a healthy ecosystem!</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">37. Soil Health and Testing</h3>
+                    <p>For inquiries about soil health and testing services, please reach out to soil@gardenrootcare.com. We offer soil testing to assess nutrient levels and recommend amendments for optimal plant growth.</p>
+                    <p>Understanding your soil is crucial for successful gardening. Our experts can provide tailored recommendations based on your soil test results.</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">38. Composting Services</h3>
+                    <p>If you're interested in composting services or education, please contact compost@gardenrootcare.com. We promote composting as a sustainable practice for enriching soil and reducing waste.</p>
+                    <p>Our team can provide guidance on setting up a composting system and offer workshops on composting techniques. Join us in reducing landfill waste!</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">39. Plant Nursery Services</h3>
+                    <p>For inquiries about our plant nursery and available plants, please contact nursery@gardenrootcare.com. We offer a wide selection of native and ornamental plants for your landscaping needs.</p>
+                    <p>Our knowledgeable staff can assist you in selecting the right plants for your garden based on your preferences and local conditions. Visit our nursery to explore our offerings!</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="text-2xl font-semibold">40. Special Promotions</h3>
+                    <p>For information about special promotions and discounts, please contact promotions@gardenrootcare.com. We regularly offer seasonal promotions to help you save on our services.</p>
+                    <p>Stay updated on our latest offers by subscribing to our newsletter or following us on social media. Don't miss out on great deals!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6">
+        <div class="container mx-auto text-center">
+            <p class="footer-text">© 2023 GardenRoot Care. All rights reserved.</p>
+            <p class="footer-text">120 E 14th St, New York, NY 10003 | (212) 555-1234</p>
+        </div>
+    </footer>
+</body>
+</html>

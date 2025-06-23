@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GardenRoot Care | Sustainable Garden Maintenance Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary: #2e7d32;
+            --secondary: #81c784;
+            --accent: #ffb74d;
+            --light: #f1f8e9;
+            --dark: #1b5e20;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .nav-link:hover {
+            color: var(--accent);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .tip-card {
+            border-top: 4px solid var(--secondary);
+        }
+        
+        footer {
+            background-color: var(--dark);
+        }
+        
+        .intro-banner {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .service-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+        
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .price-table th, .price-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .price-table th {
+            background-color: var(--light);
+            font-weight: 600;
+        }
+        
+        .price-table tr:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <img src="p1.png" alt="GardenRoot Logo" class="h-12 w-12 rounded-full">
+                    <span class="font-bold text-xl text-green-800">GardenRoot Care</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-gray-800 hover:text-green-600 transition duration-300">Home</a>
+                    <a href="privacy.html" class="nav-link text-gray-800 hover:text-green-600 transition duration-300">Privacy</a>
+                    <a href="terms.html" class="nav-link text-gray-800 hover:text-green-600 transition duration-300">Terms</a>
+                    <a href="cookies.html" class="nav-link text-gray-800 hover:text-green-600 transition duration-300">Cookies</a>
+                    <a href="contact.html" class="nav-link text-gray-800 hover:text-green-600 transition duration-300">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Introduction Banner -->
+    <section class="intro-banner py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">Sustainable Garden Care Solutions</h1>
+            <p class="text-xl md:text-2xl mb-6">Nurturing your green spaces with eco-friendly practices for healthier gardens and communities</p>
+            <button class="bg-white hover:bg-gray-100 text-green-800 font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+                Get Your Free Consultation
+            </button>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-green-800 mb-4">About GardenRoot Care</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="p1.png" alt="Our Team" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-green-700 mb-4">Our Story</h3>
+                    <p class="mb-4">Founded in 2010, GardenRoot Care began as a small team of passionate horticulturists dedicated to transforming urban spaces into thriving green oases. What started as a neighborhood initiative has grown into New York's premier sustainable garden maintenance service. Our journey began with a simple mission: to bring nature back into urban environments while respecting ecological balance.</p>
+                    <p class="mb-4">We believe that every garden, no matter how small, contributes to the health of our planet. Our mission is to help urban dwellers create and maintain beautiful, sustainable green spaces that benefit both people and the environment. Over the years, we've developed specialized techniques that combine traditional gardening wisdom with modern ecological science.</p>
+                    <p>Our team consists of certified arborists, landscape designers, and organic gardening specialists who share a commitment to eco-friendly practices and community education. We take pride in our hands-on approach, treating each garden as a unique ecosystem that requires personalized care. Our staff undergoes continuous training to stay current with the latest sustainable gardening techniques.</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="bg-green-50 p-6 rounded-lg text-center">
+                    <div class="text-green-600 text-4xl font-bold mb-2">13+</div>
+                    <h4 class="font-semibold text-green-800 mb-2">Years of Experience</h4>
+                    <p class="text-gray-600">Providing expert garden care with sustainable methods since 2010. Our team has collectively worked on over 1,200 projects across the New York metropolitan area.</p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg text-center">
+                    <div class="text-green-600 text-4xl font-bold mb-2">500+</div>
+                    <h4 class="font-semibold text-green-800 mb-2">Satisfied Clients</h4>
+                    <p class="text-gray-600">Across residential and commercial properties in New York City. Our client retention rate exceeds 85% year after year, a testament to our quality service.</p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg text-center">
+                    <div class="text-green-600 text-4xl font-bold mb-2">100%</div>
+                    <h4 class="font-semibold text-green-800 mb-2">Organic Practices</h4>
+                    <p class="text-gray-600">Chemical-free solutions for healthier gardens. We're certified by the Organic Land Care Alliance and follow strict organic protocols in all our services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-green-800 mb-4">Our Premium Services</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+                <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">We offer comprehensive garden care solutions tailored to your specific needs, combining horticultural expertise with sustainable practices for optimal results. Our services are designed to work in harmony with nature while meeting your aesthetic and functional requirements.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="s1.jpg" alt="Lawn Care" class="service-img">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-green-800 mb-3">Lush Lawn Transformation</h3>
+                        <p class="text-gray-600 mb-4">Our organic lawn care program creates thick, green turf naturally without synthetic chemicals. We use a combination of compost tea applications, aeration, and overseeding with drought-resistant grass varieties to build soil health and resilience.</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li>• Seasonal organic fertilization using seaweed and fish emulsions</li>
+                            <li>• Core aeration to improve oxygen and water penetration</li>
+                            <li>• Overseeding with premium grass varieties suited to your microclimate</li>
+                            <li>• Natural weed control through proper mowing and soil balancing</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="s2.png" alt="Tree Care" class="service-img">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-green-800 mb-3">Tree & Shrub Wellness</h3>
+                        <p class="text-gray-600 mb-4">Certified arborists provide pruning, disease treatment, and nutritional care to keep your woody plants thriving for generations to come. We follow ANSI A300 standards for tree care and use only organic treatments for pest and disease management.</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li>• Structural pruning for tree health and safety</li>
+                            <li>• Disease diagnosis and organic treatment plans</li>
+                            <li>• Deep root fertilization with mycorrhizal inoculants</li>
+                            <li>• Hazard assessment and mitigation strategies</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="s3.jpg" alt="Garden Design" class="service-img">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-green-800 mb-3">Eco-Landscape Design</h3>
+                        <p class="text-gray-600 mb-4">Beautiful, functional outdoor spaces designed with native plants, sustainable materials, and water-wise principles for low-maintenance beauty. Our designs incorporate permaculture principles to create self-sustaining ecosystems.</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li>• Comprehensive site analysis and master planning</li>
+                            <li>• Native plant selection to support local wildlife</li>
+                            <li>• Hardscape design with permeable materials</li>
+                            <li>• 3D visualization of proposed designs</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="s4.jpeg" alt="Irrigation" class="service-img">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-green-800 mb-3">Smart Irrigation Systems</h3>
+                        <p class="text-gray-600 mb-4">Water-saving irrigation solutions with weather-based controllers and precision drip systems that reduce water use by up to 50%. Our systems are designed to deliver water exactly where and when plants need it most.</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li>• Custom irrigation system design for efficiency</li>
+                            <li>• Smart controller installation with weather monitoring</li>
+                            <li>• Drip irrigation for beds and containers</li>
+                            <li>• Seasonal system maintenance and winterization</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="s5.jpg" alt="Edible Garden" class="service-img">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-green-800 mb-3">Edible Garden Installation</h3>
+                        <p class="text-gray-600 mb-4">From raised beds to fruit tree orchards, we design and install productive edible gardens tailored to your space and culinary preferences. Our edible gardens incorporate companion planting for natural pest control.</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li>• Custom raised bed construction with organic soil</li>
+                            <li>• Seasonal vegetable planting plans</li>
+                            <li>• Berry patch and fruit tree installation</li>
+                            <li>• Organic pest management solutions</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="s6.jpg" alt="Seasonal Care" class="service-img">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-green-800 mb-3">Seasonal Care Programs</h3>
+                        <p class="text-gray-600 mb-4">Year-round maintenance plans that adapt to each season's needs, from spring cleanups to winter protection and everything between. Our seasonal programs ensure your garden thrives in every climate condition.</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li>• Spring garden revitalization and soil preparation</li>
+                            <li>• Summer garden maintenance and monitoring</li>
+                            <li>• Fall leaf management and bulb planting</li>
+                            <li>• Winter protection services and planning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+                    View All Services
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-green-800 mb-4">Service Pricing</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+                <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">Transparent pricing for our most popular services. All prices are estimates and may vary based on your specific needs.</p>
+            </div>
+            
+            <div class="overflow-x-auto">
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Description</th>
+                            <th>Starting Price</th>
+                            <th>Frequency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Basic Lawn Care</td>
+                            <td>Mowing, edging, and basic maintenance</td>
+                            <td>$50 per visit</td>
+                            <td>Weekly/Bi-weekly</td>
+                        </tr>
+                        <tr>
+                            <td>Premium Lawn Care</td>
+                            <td>Includes aeration, overseeding, organic fertilization</td>
+                            <td>$120 per visit</td>
+                            <td>Monthly </td>
+                        </tr>
+                        <tr>
+                            <td>Tree Pruning</td>
+                            <td>Professional pruning for health and safety</td>
+                            <td>$75 per tree</td>
+                            <td>As needed</td>
+                        </tr>
+                        <tr>
+                            <td>Garden Design</td>
+                            <td>Custom landscape design services</td>
+                            <td>$500 and up</td>
+                            <td>One-time</td>
+                        </tr>
+                        <tr>
+                            <td>Edible Garden Installation</td>
+                            <td>Complete setup of vegetable and herb gardens</td>
+                            <td>$300 and up</td>
+                            <td>One-time</td>
+                        </tr>
+                        <tr>
+                            <td>Irrigation System Installation</td>
+                            <td>Smart irrigation systems for efficient watering</td>
+                            <td>$800 and up</td>
+                            <td>One-time</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gardening Tips Section -->
+    <section id="tips" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-green-800 mb-4">Gardening Tips for Success</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+                <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">Here are some expert tips to help you maintain a thriving garden:</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="tip-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-green-800 mb-3">Know Your Soil</h3>
+                    <p class="text-gray-600">Test your soil to understand its pH and nutrient levels. This will help you choose the right plants and amendments for optimal growth.</p>
+                </div>
+                <div class="tip-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-green-800 mb-3">Choose Native Plants</h3>
+                    <p class="text-gray-600">Native plants are adapted to your local climate and soil conditions, making them easier to care for and more beneficial to local wildlife.</p>
+                </div>
+                <div class="tip-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-green-800 mb-3">Water Wisely</h3>
+                    <p class="text-gray-600">Water early in the morning or late in the evening to reduce evaporation. Use mulch to retain moisture and suppress weeds.</p>
+                </div>
+                <div class="tip-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-green-800 mb-3">Practice Crop Rotation</h3>
+                    <p class="text-gray-600">Rotate your crops each season to prevent soil depletion and reduce pest and disease buildup.</p>
+                </div>
+                <div class="tip-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-green-800 mb-3">Encourage Beneficial Insects</h3>
+                    <p class="text-gray-600">Plant flowers that attract pollinators and beneficial insects to help control pests naturally.</p>
+                </div>
+                <div class="tip-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-green-800 mb-3">Stay Informed</h3>
+                    <p class="text-gray-600">Keep learning about gardening techniques and trends. Join local gardening clubs or online forums for support and inspiration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultant Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-green-800 mb-4">Expert Gardening Consultation</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div class="lg:w-2/3">
+                    <h3 class="text-2xl font-semibold text-green-700 mb-4">Professional Guidance for Your Garden</h3>
+                    <p class="mb-6">Our certified garden consultants bring decades of combined experience to help you make the most of your outdoor space. Whether you're starting a new garden, revitalizing an existing one, or facing specific challenges, we provide tailored solutions that work.Our team of certified garden consultants brings decades of collective experience and a deep passion for horticulture, landscaping, and sustainable garden design. We understand that every outdoor space holds unique potential, and our mission is to help you unlock it. Whether you're embarking on the exciting journey of starting a brand-new garden from scratch, breathing new life into an aging or underperforming landscape, or facing specific challenges such as poor soil conditions, pest problems, irrigation inefficiencies, or lack of seasonal interest — we’re here to help.
+
+We don’t believe in one-size-fits-all solutions. Every garden is a living, evolving ecosystem that deserves thoughtful, personalized care. That’s why we take the time to understand your vision, your space, and your needs — from aesthetics and functionality to sustainability and maintenance levels. Our consultants offer hands-on guidance, practical strategies, and innovative design recommendations that are tailored specifically to your goals.
+
+Whether you're cultivating a serene backyard retreat, a thriving edible garden, a pollinator-friendly haven, or a water-efficient landscape, we provide actionable, science-backed insights and creative ideas to bring your dream garden to life. With our expert support, you can feel confident knowing your outdoor space will not only flourish but also enhance your lifestyle, your property value, and your connection to nature.
+
+Let our expertise be the foundation for your garden’s success.</p>
+                    
+                    <div class="mb-8">
+                        <h4 class="text-xl font-semibold text-green-800 mb-3">Initial Consultation Includes:</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Comprehensive site evaluation including sun exposure, soil quality, and microclimate assessment</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Detailed discussion of your goals, preferences, and concerns</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-green-600 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Customized plant selection recommendations suited to your conditions</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-1/3">
+                    <h3 class="text-2xl font-semibold text-green-700 mb-4">Schedule Today!</h3>
+                    <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-green-800 mb-4">Contact Us</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+            </div>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <form class="space-y-4">
+                        <div>
+                            <input type="text" placeholder="Your Name" required class="w-full p-3 border border-gray-300 rounded">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Your Email" required class="w-full p-3 border border-gray-300 rounded">
+                        </div>
+                        <div>
+                            <textarea rows="4" placeholder="Your Message" required class="w-full p-3 border border-gray-300 rounded"></textarea>
+                        </div>
+                        <button type="submit" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">Send Message</button>
+                    </form>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-green-700 mb-4">Our Location</h3>
+                    <p class="text-gray-600 mb-2">123 Greenway Drive</p>
+                    <p class="text-gray-600 mb-2">New York, NY 10001</p>
+                    <p class="text-gray-600 mb-2">Phone: (123) 456-7890</p>
+                    <p class="text-gray-600 mb-2">Email: info@gardenrootcare.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-600">© 2023 GardenRoot Care. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
